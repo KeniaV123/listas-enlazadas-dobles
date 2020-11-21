@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body style="background-color:bisque;"></body>
+<body>   
+<center>
+<h1><font color="teal">Control de Inventario </font></h1> 
+    <div class="container">
+        <form id="form1">
+            <h3><font color="purple">Agregar productos </font></h3>
+            <input type="number" id="codigoP" placeholder="Codigo del producto"/>
+            <br>
+            <br>
+            <input type="text" id="nombreP" placeholder="Nombre del producto"/>
+            <br>
+            <br>
+            <textarea id="descripcionP" cols="23" rows="3" placeholder="Descripción del Producto"></textarea>
+            <br>
+            <br>
+            <input type="number" id="cantidadP" placeholder="Cantidad de Productos"/>
+            <br>
+            <br>
+            <input type="number" id="costoP" placeholder="Costo del Producto"/>
+            <br>
+            <br>
+            <input type="button" value="Agregar producto" id="botonAgregar" style="background-color: aquamarine;">
+                             
+        </form>
+        <form id="form2"> 
+            <h3><font color="purple">Borrar productos</font></h3>
+            <input type="button" id="eliminarPrimero" value="Eliminar el primero" style="background-color: aquamarine;" />
+            <br>
+            <br>
+            <input type="number" id="borrarProducto" placeholder="Código del Producto"/>
+            <br>
+            <br>
+            <input type="button" id="botonBorrar" value="Borrar producto" style="background-color: aquamarine;" />
+            <br>
+            <br>
+        </form>
+        <form id="form3">
+            <h3><font color="purple">Buscar productos</font></h3>
+            <input type="number" id="buscarProducto" placeholder="Código del Producto"/>
+            <br>
+            <br>
+            <input type="button" id="botonBuscar" value="Buscar producto" style="background-color: aquamarine;"/>
+        </form>
+            <h3><font color="purple">Listar Productos</font></h3>
+            <input type="button" id="botonListar" value="Listar productos" style="background-color: aquamarine;" />
+            <br>
+            <br>
+            <input type="button" id="botonListarIn" value="Listar productos (inverso)" style="background-color: aquamarine;" />
+            <br>
+            <br>
+            <h3><font color="purple">Inventario de Productos</font></h3>
+            <ul id="listar" class="list-group"></ul>
+    </div>
+</center>   
+    <script src="main.js"></script>
+</body>
+</html>
